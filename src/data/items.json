@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Bread",
+        "price": 5.99,
+        "imgUrl": "/images/bread.jpeg"
+    },
+
+    {
+        "id": 2,
+        "name": "Stampler",
+        "price": 9.99,
+        "imgUrl": "/images/stampler.jpeg"
+    },
+
+    {
+        "id": 3,
+        "name": "Kebab",
+        "price": 16.99,
+        "imgUrl": "/images/kebab.jpeg"
+    }
+]
