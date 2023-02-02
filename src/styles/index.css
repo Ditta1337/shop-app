@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  
+  @font-face {
+    font-family: 'PT Serif';
+    src: font-url('PTSerif-Regular.ttf') format('truetype');
+  }
+  
+  html {
+    @apply font-serif;
+  }
 
   img {
-    @apply rounded-md shadow-md mb-3 object-cover w-full h-full;
+    @apply rounded-md shadow-md object-cover w-full h-full;
   }
   
   .navlink {
@@ -13,7 +24,7 @@
   }
 
   li {
-    @apply inline-block p-1 rounded-md mx-1 bg-white shadow-sm hover:shadow-xl hover:translate-x-[-2px] hover:translate-y-[2px] transition-all duration-500;
+    @apply inline-block p-1 rounded-md mx-1 bg-white shadow-sm hover:shadow-xl transition-all duration-500;
   }
 
   input {
