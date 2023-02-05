@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+
+import "grpcSingUpUser.proto";
+import "user.proto";
+
+
+service AuthService {
+  rpc SignUpUser(SignUpUserInput) returns (GenericResponse) {}
+  rpc VerifyEmail(VerifyEmailRequest) returns (GenericResponse) {}
+}
+
+message VerifyEmailRequest { string verificationCode = 1; }
