@@ -6,7 +6,7 @@ import (
 	"net"
 
 	"github.com/Ditta1337/shop-app/server/database"
-	"github.com/Ditta1337/shop-app/server/jwt"
+	"github.com/Ditta1337/shop-app/server/auth"
 	"github.com/Ditta1337/shop-app/server/proto"
 	"github.com/dgrijalva/jwt-go"
 	"golang.org/x/crypto/bcrypt"
