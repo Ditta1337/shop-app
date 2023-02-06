@@ -4,6 +4,8 @@ package pb;
 
 import "google/protobuf/timestamp.proto";
 
+option go_package = "github.com/Ditta1337/shop-app/server/proto";
+
 message User {
   string id = 1;
   string email = 2;

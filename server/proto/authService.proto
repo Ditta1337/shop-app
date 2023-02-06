@@ -5,6 +5,8 @@ package pb;
 import "grpcSingUpUser.proto";
 import "user.proto";
 
+option go_package = "github.com/Ditta1337/shop-app/server/proto";
+
 
 service AuthService {
   rpc SignUpUser(SignUpUserInput) returns (GenericResponse) {}
