@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AiFillShopping } from "react-icons/ai";
-import { client } from "../client/grpcClient";
 import { LogInUserFunc  } from "../client/grpcClient";
-
-
-
 
 
 export default function Login() {
@@ -14,6 +10,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  // this does not work
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(email, password)
