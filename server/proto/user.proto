@@ -7,15 +7,19 @@ import "google/protobuf/timestamp.proto";
 option go_package = "github.com/Ditta1337/shop-app/server/proto";
 
 message User {
-  string id = 1;
-  string email = 2;
-  enum role {
+  string Id = 1;
+  string Email = 2;
+  string Password = 3;
+  string Token = 4;
+  string VerificationCode = 5;
+  enum Role {
     user = 0;
     admin = 1;
   }
-  google.protobuf.Timestamp created_at = 4;
-  google.protobuf.Timestamp updated_at = 5;
+  google.protobuf.Timestamp CreatedAt = 6;
+  google.protobuf.Timestamp UpdatedAt = 7;
 }
+
 
 message GenericResponse {
   string status = 1;

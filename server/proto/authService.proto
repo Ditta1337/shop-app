@@ -2,7 +2,8 @@ syntax = "proto3";
 
 package pb;
 
-import "grpcSingUpUser.proto";
+import "grpcSignUpUser.proto";
+import "grpcLogInUser.proto";
 import "user.proto";
 
 option go_package = "github.com/Ditta1337/shop-app/server/proto";
@@ -11,6 +12,7 @@ option go_package = "github.com/Ditta1337/shop-app/server/proto";
 service AuthService {
   rpc SignUpUser(SignUpUserInput) returns (GenericResponse) {}
   rpc VerifyEmail(VerifyEmailRequest) returns (GenericResponse) {}
+  rpc LogInUser(LogInUserInput) returns (LogInUserResponse) {}
 }
 
 message VerifyEmailRequest { string verificationCode = 1; }

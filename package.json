@@ -9,13 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.8.8",
+    "@grpc/proto-loader": "^0.7.4",
+    "grpc-web": "^1.4.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.0",
-    "sort-by": "^0.0.2"
+    "sort-by": "^0.0.2",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
@@ -23,6 +27,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.13",
+    "grpc-web-ts-compiler": "^1.0.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",

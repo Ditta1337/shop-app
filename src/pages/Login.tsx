@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AiFillShopping } from "react-icons/ai";
+import { client } from "../client/grpcClient";
+import { LogInUserFunc  } from "../client/grpcClient";
+
+
+
+
 
 export default function Login() {
 
@@ -10,9 +16,10 @@ export default function Login() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    navigate("/");
     console.log(email, password)
-    // send data to server
+    
+    LogInUserFunc(email, password)
+    //navigate("/");
   };
 
   return (
