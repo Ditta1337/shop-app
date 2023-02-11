@@ -10,13 +10,12 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // this does not work
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(email, password)
-    
-    LogInUserFunc(email, password)
-    //navigate("/");
+    // this does not work
+    //LogInUserFunc(email, password)
+    navigate("/");
   };
 
   return (
